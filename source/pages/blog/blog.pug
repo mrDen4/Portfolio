@@ -1,0 +1,19 @@
+extends ../base
+
+block head
+    title Блог
+
+block content
+    header.header
+        .header__socials
+            a.socials__link(href="http:/vk.com")
+                img(src=require("./vk.png"), alt="vk.com")
+            a.socials__link(href="http:/vk.com")
+                img(src=require("./vk.png"), alt="vk.com")
+            a.socials__link(href="http:/vk.com")
+                img(src=require("./vk.png"), alt="vk.com")
+    section.ava
+            img.ava__avatar(src=require("./ava.png"), alt="avatar")
+            .ava__content
+                h2.ava__name Денис Давыдов
+                p.ava__text  Личный сайт веб разработчика

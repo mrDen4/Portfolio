@@ -1,0 +1,52 @@
+extends ../base
+
+block head
+    title Авторизация
+
+block content
+    div(class='wrapper welcome__wrapper')
+        div(class='auth')
+            h1(class='auth__title') Авторизируйтесь
+            form(action="" class='auth__form')
+                div(class='form__content')
+                    label(class="form__label" for="login") 
+                        p(class="form__icon") Л
+                        input(type="text" id='login' class='form__input' placeholder='Логин')
+                div(class='form__content')
+                    label(class="form__label" for="password")
+                        p(class="form__icon") П
+                        input(type="text" id='password' class='form__input' placeholder='Пароль')
+                div(class='form__content')
+                    label(class="form__label" for="human")
+                        input(type="checkbox" id='human' class='form__checkbox')
+                        p(class="form__text") Я человек
+                p(class='form__question') Вы точно не робот?
+                div(class='form__content')
+                    div(class="form__radio")
+                        label(class="form__label-radio")
+                            input(type="radio" name="robot" value="yep" class='form__radio')
+                            p(class="form__text") Да
+                        label(class="form__label-radio")
+                            input(type="radio" name="robot" value="nope" class='form__radio')
+                            p(class="form__text") Не уверен
+                div(class='form__content')
+                    button(type='button' class='form__btn') На главную
+                    button(type='button' class='form__btn') Войти
+        div(class="welcome")
+            div(class="welcome__info")
+                img(src=require("./ava.png"), alt="avatar" class="welcome__avatar")
+                h2(class="welcome__name") Денис Давыдов
+                p(class="welcome__text") Личный сайт веб разработчика
+            div(class="welcome__socials")
+                a(href="vk.com" class="socials__link")
+                    div(class="socials__icon socials__icon--vk")
+                a(href="vk.com" class="socials__link")
+                    div(class="socials__icon socials__icon--git")
+                a(href="vk.com" class="socials__link")
+                    div(class="socials__icon socials__icon--in")
+            div(class="welcome__btns")
+                button(type="button" class="welcome__btn") Мои работы
+                button(type="button" class="welcome__btn") Обо мне
+                button(type="button" class="welcome__btn") Блог
+        footer(class='footer')
+            p(class='footer-text') © Давыдов Денис | создано с любовью в LoftSchool | 2018
