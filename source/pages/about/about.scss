@@ -1,9 +1,54 @@
+.container{
+    width: 95%;
+    max-width: 940px;
+    min-height: 650px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 70px;
+}
+
+.header-container {
+    min-height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-container {
+    flex-direction: row;
+    min-width: 100%;
+    padding: 0;
+}
+
 .header {
     position: absolute;
+    width: 100%;
     top: 0;
 }
 
-.ava{
+.header__menu-btn {
+    width: 40px;
+    height: 35px;
+    background: url('./hamburger.png') center center no-repeat;
+    border: none;
+}
+
+.socials__link {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.section {
+    height: 100vh;
+}
+
+.hero{
     height: 100vh;
     width: 100vw;
     background: url('./bg.png') center center no-repeat;
@@ -20,7 +65,71 @@
     border-radius: 50%;
 }
 
+.hero__ava {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .ava__content {
     color: white;
 }
 
+.about__content {
+    width: 50%;
+    display: flex;
+    height: 100%;
+}
+
+.about__content-left {
+    background: #edebe6;
+}
+
+.about__content-right {
+    flex-direction: column;
+    background-color: #ebe8db;
+}
+
+.content-left__title {
+    width: 50%;
+    text-align: center;
+}
+
+.content-left__about {
+    width: 50%;
+
+    .content-left__ava {
+        width: 440px;
+        height: 390px;
+        background: url('./ava.png') center center no-repeat;
+    }
+
+    .content-left__subtitle {
+        text-align: center;
+    }
+}
+
+.about__content-right {
+    .content-right__title {
+        text-align: center;
+    }
+}
+
+.map {
+    background: url('./map.png') center center no-repeat;
+    background-size: cover;
+}
+
+.map__contacts {
+    width: 380px;
+    height: 290px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 40px;
+
+    .contacts__title {
+        text-align: center;
+    }
+}
