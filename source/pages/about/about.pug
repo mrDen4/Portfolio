@@ -12,8 +12,68 @@ block content
                 img(src=require("./vk.png"), alt="vk.com")
             a.socials__link(href="http:/vk.com")
                 img(src=require("./vk.png"), alt="vk.com")
-    section.ava
+        .header__menu
+            button.header__menu-btn(type="button")
+    section.hero
+        .hero__back-text
+        .hero__ava
             img.ava__avatar(src=require("./ava.png"), alt="avatar")
             .ava__content
                 h2.ava__name Денис Давыдов
                 p.ava__text  Личный сайт веб разработчика
+        .hero__btn-next
+    section.about
+        .about__content.about__content-left
+            .content-left__triangle.about__triangle-left
+            .content-left__title Обо мне
+            .content-left__ava
+            .content-left__description
+                .content-left__subtitle Кто я
+                .content-left__text Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+        .about__content.about__content-right
+            .content-right__title Чем я могу быть вам полезен
+            .content-right__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+            .content-right__row-chart
+                .row-chart__title Frontend   
+            .content-right__row-chart
+                .row-chart__title Backend   
+            .content-right__row-chart
+                .row-chart__title Workflow 
+    section.map
+        .map__contacts
+            .contacts__title Контакты
+            .contacts__description
+                img.contacts__icon(src="", alt="")
+                p.contacts__text skype__kdn
+            .contacts__description
+                img.contacts__icon(src="", alt="")
+                p.contacts__text den.saint.k@gmail.com
+            .contacts__description
+                img.contacts__icon(src="", alt="")
+                p.contacts__text +7 926 123 12 12
+            .contacts__description
+                img.contacts__icon(src="", alt="")
+                p.contacts__text г.Зеленоград, ул. Летчика Полагушина, д. 452
+    footer.footer
+        .footer__left
+            .left__links
+                ul.left__links-list
+                    li.left__links__item
+                        a.left__link(href="") Мои работы
+                    li.left__links__item
+                        a.left__link(href="") Обо мне
+                    li.left__links__item
+                        a.left__link(href="") Блог
+                    li.left__links__item
+                        a.left__link(href="") Авторизация
+            .left__text Я веб-разработчик из Зеленограда, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+        .footer__right
+            .right__soc
+                a.soc__link(href="http:/vk.com")
+                    img(src=require("./vk.png"), alt="vk.com")
+                a.soc__link(href="http:/vk.com")
+                    img(src=require("./vk.png"), alt="vk.com")
+                a.soc__link(href="http:/vk.com")
+                    img(src=require("./vk.png"), alt="vk.com")
+            .right__text © Давыдов Денис | создано с любовью в LoftSchool | 2018
+            

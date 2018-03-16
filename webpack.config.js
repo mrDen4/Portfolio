@@ -6,6 +6,7 @@ const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 const PATHS = {
     source: path.join(__dirname, 'source'),
@@ -95,7 +96,35 @@ module.exports = {
                 options: {
                     name: 'images/[name].[ext]'
                 }
-            }   
+            },
+            {
+                test: /\.(svg)$/i,   //to support eg. background-image property 
+                loader:'file-loader',
+                options:{
+                name:'[path][name].[ext]',
+                }
+              },
+              {
+              test: /\.(svg)$/i,   //sprite 
+              include: path.resolve(__dirname, 'source/svg/to_sprite'),
+              use: [
+                {
+                  loader: 'svg-sprite-loader',
+                  options: {
+                    extract: true,
+                    spriteFilename:  'svg/sprite.svg',
+                  }
+                },
+                   {
+                 loader: 'svgo-loader',
+                  options: {
+                  plugins: [
+                    { removeAttrs: { attrs: '(fill|stroke)' } },
+                    ],
+                  },
+                },
+               ],
+              }  
         ]
     }
 }
