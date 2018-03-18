@@ -1,0 +1,33 @@
+.section {
+    height: 100vh;
+}
+
+.container{
+    width: 95%;
+    max-width: 940px;
+    min-height: 650px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 70px;
+}
+
+.header-container {
+    min-height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-container {
+    flex-direction: row;
+    min-width: 100%;
+    padding: 0;
+}
+
+.footer-container {
+    flex-direction: row;
+    min-height: 150px;
+}

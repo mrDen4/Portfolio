@@ -1,0 +1,87 @@
+.auth {
+    width: 380px;
+    height: 400px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+}
+
+.auth__title {
+    text-transform: uppercase;
+    font-family: 'BERNIER', Arial, Helvetica, sans-serif;
+    color: #455a64;
+    font-weight: 400;
+    margin: 33px 0 40px 0;
+} 
+
+.form__question {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+}
+
+.form__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.form__label-radio {
+    @extend .form__label;
+    margin-right: 40px;
+
+    .form__radio {
+        margin-right: 10px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__input {
+    width: 290px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 16px 18px;
+    font-size: 16px;
+}
+
+.form__radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__content {
+    display: flex;
+    justify-content: center;
+}
+
+.form__btn {
+    width: 190px;
+    height: 50px;
+    background: #009688;
+    border: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-right: #dee3e7 2px solid;
+
+    &:last-child {
+        border: none;
+    }
+}

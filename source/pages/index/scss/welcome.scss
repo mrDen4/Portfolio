@@ -1,0 +1,102 @@
+.welcome {
+    width: 380px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.welcome__avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 45px 0 7px 0;
+}
+
+.welcome__name {
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #455a64;
+    font-size: 28px;
+}
+
+.welcome__text {
+    margin: 5px 0 35px 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #455a64;
+    font-size: 16px;
+}
+
+.welcome__socials {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.socials__link {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.socials__icon {
+    width: 30px;
+    height: 20px;
+
+    &--vk {
+        background: url("../img/vk.png") center center no-repeat;
+    }
+
+    &--git {
+        background: url("../img/github.png") center center no-repeat;
+    }
+
+    &--in {
+        background: url("../img/in-hover.png") center center no-repeat;
+    }
+}
+
+.welcome__btns {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.welcome__btn {
+    width: 34%;
+    height: 45px;
+    border: none;
+    background: #00bfa5;
+    color: white;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    border-right: #dee3e7 2px solid;
+    cursor: pointer;
+
+    &:last-child {
+        border: none;
+    }
+}
+
+
+.welcome__wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: url('../img/index-bg.png') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
