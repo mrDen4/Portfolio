@@ -8,26 +8,29 @@ block content
         .container.header-container
             .header__socials
                 a.socials__link(href="http:/vk.com")
-                    img(src=require("./vk.png"), alt="vk.com")
+                    img(src=require("./img/vk.png"), alt="vk.com")
                 a.socials__link(href="http:/vk.com")
-                    img(src=require("./github.png"), alt="vk.com")
+                    img(src=require("./img/github.png"), alt="vk.com")
                 a.socials__link(href="http:/vk.com")
-                    img(src=require("./in.png"), alt="vk.com")
+                    img(src=require("./img/in.png"), alt="vk.com")
             .header__menu
                 button.header__menu-btn(type="button")
     section.section.hero
         .container.hero-container
             .hero__back-text
             .hero__ava
-                img.ava__avatar(src=require("./ava.png"), alt="avatar")
+                img.ava__avatar(src=require("./img/ava.png"), alt="avatar")
                 .ava__content
                     h2.ava__name Денис Давыдов
                     p.ava__text  Личный сайт веб разработчика
             .hero__btn-next
     section.section.about
         .container.about-container
+            .about__triangles
+                svg.triangles__tr(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
+                    polygon.triangles__left(points="0,0   0,86   500.8,86   500.8,75.5")
+                    polygon.triangles__right(points="1000,0   1000,86   500,86   500,75.5")
             .about__content.about__content-left
-                .content-left__triangle.about__triangle-left
                 .content-left__title Обо мне
                 .content-left__about
                     .content-left__ava
@@ -132,10 +135,10 @@ block content
                 .footer__right
                     .right__soc
                         a.soc__link(href="http:/vk.com")
-                            img(src=require("./vk.png"), alt="vk.com")
+                            img(src=require("./img/vk.png"), alt="vk.com")
                         a.soc__link(href="http:/vk.com")
-                            img(src=require("./vk.png"), alt="vk.com")
+                            img(src=require("./img/vk.png"), alt="vk.com")
                         a.soc__link(href="http:/vk.com")
-                            img(src=require("./vk.png"), alt="vk.com")
+                            img(src=require("./img/vk.png"), alt="vk.com")
                     .right__text © Давыдов Денис | создано с любовью в LoftSchool | 2018
             

@@ -61,7 +61,7 @@
 .header__menu-btn {
     width: 40px;
     height: 35px;
-    background: url('./hamburger.png') center center no-repeat;
+    background: url('./img/hamburger.png') center center no-repeat;
     border: none;
     cursor: pointer;
 }
@@ -81,7 +81,7 @@
 .hero{
     height: 100vh;
     width: 100vw;
-    background: url('./bg.png') center center no-repeat;
+    background: url('./img/bg.png') center center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -125,6 +125,22 @@
     height: 100%;
 }
 
+.about__triangles {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    bottom: -4px;
+    margin: 0 auto;
+
+    .triangles__left {
+        fill: #edebe6;
+    }
+
+    .triangles__right {
+        fill: #ebe8db;
+    }
+}
+
 .about__content-left {
     background: #edebe6;
 }
@@ -148,7 +164,7 @@
     .content-left__ava {
         width: 440px;
         height: 390px;
-        background: url('./ava.png') center center no-repeat;
+        background: url('./img/ava.png') center center no-repeat;
     }
 
     .content-left__subtitle {
@@ -261,7 +277,7 @@
 
 
 .map {
-    background: url('./map.png') center center no-repeat;
+    background: url('./img/map.png') center center no-repeat;
     background-size: cover;
     position: relative;
 }
