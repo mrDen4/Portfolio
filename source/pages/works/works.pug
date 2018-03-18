@@ -1,19 +1,78 @@
-extends ../base
+extends ../base-header
 
 block head
     title Мои Работы
 
 block content
-    header.header
-        .header__socials
-            a.socials__link(href="http:/vk.com")
-                img(src=require("./vk.png"), alt="vk.com")
-            a.socials__link(href="http:/vk.com")
-                img(src=require("./vk.png"), alt="vk.com")
-            a.socials__link(href="http:/vk.com")
-                img(src=require("./vk.png"), alt="vk.com")
-    section.ava
-            img.ava__avatar(src=require("./ava.png"), alt="avatar")
-            .ava__content
-                h2.ava__name Денис Давыдов
-                p.ava__text  Личный сайт веб разработчика
+    section.section.works
+        .works__triangles
+            svg.triangles__tr(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
+                polygon.triangles__left(points="0,0   0,86   500.8,86   500.8,75.5")
+                polygon.triangles__right(points="1000,0   1000,86   500,86   500,75.5")
+        .works__head
+            h1.works__title Мои Работы
+        .works__info
+            h2.works__info-title Сайт школы онлайн Образования
+            p.works__info-text HTML , CSS, JAVASCRIPT
+            button.works__info-btn Посмотреть сайт
+        .works__slide
+            img.works__slide-img(src=require("./img/slide-1.png"), alt="slide-1")
+        .works__btns
+            button.works__prev
+                img.works__prev-img(src=require("./img/slide-1.png"), alt="prev-slide")
+            button.works__next
+                img.works__next-img(src=require("./img/slide-1.png"), alt="next-slide") 
+    section.section.talk
+        .container.talk-container
+            .talk__content
+                .content__title Что обо мне говорят
+                .content__comments
+                    .comments__comment
+                        p.comments__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        .comments__author
+                            img.comments__ava(src=require("./img/ava-1.png"), alt="ava-1")
+                            .comments__about-author
+                                p Ковальчук Дмитрий 
+                                p основатель Loftschool
+                    .comments__comment
+                        p.comments__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                        .comments__author
+                            img.comments__ava(src=require("./img/ava-2.png"), alt="ava-1")
+                            .comments__about-author
+                                p Сабанцев Владимир 
+                                p преподаватель
+                .conent__contact
+                    .contact__form
+                        form.form__form
+                            .form__title Связаться со мной
+                            input.form__input(type="text" placeholder="Имя")
+                            input.form__input(type="text" placeholder="Email")
+                            textarea.form__textarea(name="", cols="10", rows="10" placeholder="Ваше сообщение")
+                            .form__btns
+                                button.form__btn(type="submit") Отправить
+                                button.form__btn(type="button") Очистить
+            footer.footer
+                .container.footer-container
+                    .footer__left
+                        .left__links
+                            ul.left__links-list
+                                li.left__links__item
+                                    a.left__link(href="") Мои работы
+                                li.left__links__item
+                                    a.left__link(href="") Обо мне
+                                li.left__links__item
+                                    a.left__link(href="") Блог
+                                li.left__links__item
+                                    a.left__link(href="") Авторизация
+                        .left__text Я веб-разработчик из Зеленограда, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+                    .footer__right
+                        .right__soc
+                            a.soc__link(href="http:/vk.com")
+                                img(src=require("./img/vk.png"), alt="vk.com")
+                            a.soc__link(href="http:/vk.com")
+                                img(src=require("./img/vk.png"), alt="vk.com")
+                            a.soc__link(href="http:/vk.com")
+                                img(src=require("./img/vk.png"), alt="vk.com")
+                        .right__text © Давыдов Денис | создано с любовью в LoftSchool | 2018
+
+    

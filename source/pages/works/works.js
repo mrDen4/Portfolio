@@ -1,2 +1,2 @@
 import 'normalize.css';
-import './works.scss';
+import './scss/works.scss';

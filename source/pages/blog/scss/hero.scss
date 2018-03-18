@@ -1,0 +1,40 @@
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background: url('../img/bg.png') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ava__avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.hero__ava {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .ava__name {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .ava__text {
+        font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+}
+
+.ava__content {
+    color: white;
+}

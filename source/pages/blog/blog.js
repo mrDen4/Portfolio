@@ -1,2 +1,2 @@
 import 'normalize.css';
-import './blog.scss';
+import './scss/blog.scss';
