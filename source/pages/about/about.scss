@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('/fonts/Roboto-Light.woff2') format('woff2'),
+        url('/fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BERNIER';
+    src: url('/fonts/BERNIERRegular-Regular.woff2') format('woff2'),
+        url('/fonts/BERNIERRegular-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container{
     width: 95%;
     max-width: 940px;
@@ -23,6 +47,11 @@
     padding: 0;
 }
 
+.footer-container {
+    flex-direction: row;
+    min-height: 150px;
+}
+
 .header {
     position: absolute;
     width: 100%;
@@ -34,6 +63,7 @@
     height: 35px;
     background: url('./hamburger.png') center center no-repeat;
     border: none;
+    cursor: pointer;
 }
 
 .socials__link {
@@ -71,6 +101,18 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    .ava__name {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .ava__text {
+        font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
 }
 
 .ava__content {
@@ -95,6 +137,9 @@
 .content-left__title {
     width: 50%;
     text-align: center;
+    font-family: 'BERNIER', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .content-left__about {
@@ -117,9 +162,108 @@
     }
 }
 
+.row-chart__item{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+
+    .item__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1bb696;
+        font-weight: bold;
+    }
+
+    .row-chart__circles {
+    fill: none;
+    stroke-width: 15;
+    }
+    .circle__first {
+        stroke: #dfdcd5;
+    }
+    .circle__second {
+        stroke: #1bb696;
+        stroke-dasharray: .0010 282.6;
+        transition: all 1s;
+    }
+
+    .row-chart__circles .circle-0 {
+        stroke-dasharray: .001 282.6;
+     }
+     .row-chart__circles .circle-5 {
+       stroke-dasharray: 14.13 282.6;
+     }
+     .row-chart__circles .circle-10 {
+        stroke-dasharray: 28.26 282.6;
+     }
+     .row-chart__circles .circle-15 {
+        stroke-dasharray: 42.39 282.6;
+     }
+     .row-chart__circles .circle-20 {
+        stroke-dasharray: 56.52 282.6;
+     }
+     .row-chart__circles .circle-25 {
+        stroke-dasharray: 70.65 282.6;
+     }
+     .row-chart__circles .circle-30 {
+        stroke-dasharray: 84.78 282.6;
+     }
+     .row-chart__circles .circle-35 {
+        stroke-dasharray: 98.91 282.6;
+     }
+     .row-chart__circles .circle-40 {
+        stroke-dasharray: 113.04 282.6;
+     }
+     .row-chart__circles .circle-45 {
+        stroke-dasharray: 127.17 282.6;
+     }
+     .row-chart__circles .circle-50 {
+        stroke-dasharray: 141.3 282.6;
+     }
+     .row-chart__circles .circle-55 {
+        stroke-dasharray: 155.43 282.6;
+     }
+     .row-chart__circles .circle-60 {
+        stroke-dasharray: 169.56 282.6;
+     }
+     .row-chart__circles .circle-65 {
+        stroke-dasharray: 183.69 282.6;
+     }
+     .row-chart__circles .circle-70 {
+        stroke-dasharray: 197.82 282.6;
+     }
+     .row-chart__circles .circle-75 {
+        stroke-dasharray: 211.95 282.6;
+     }
+     .row-chart__circles .circle-80 {
+        stroke-dasharray: 226.08 282.6;
+     }
+     .row-chart__circles .circle-85 {
+        stroke-dasharray: 240.21 282.6;
+     }
+     .row-chart__circles .circle-90 {
+        stroke-dasharray: 254.34 282.6;
+     }
+     .row-chart__circles .circle-95 {
+        stroke-dasharray: 268.47 282.6;
+     }
+     .row-chart__circles .circle-100 {
+        stroke-dasharray: 282.6 282.6;
+     }
+}
+
+
+
 .map {
     background: url('./map.png') center center no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .map__contacts {
@@ -131,5 +275,43 @@
 
     .contacts__title {
         text-align: center;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    min-height: 150px;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    .footer__left {
+        width: 50%;
+        text-align: left;
+    }
+
+    .footer__right {
+        width: 50%;
+        text-align: right;
+    }
+}
+
+.left__links-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    .left__links__item {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .left__link {
+            color: white;
+            text-decoration: none;
+        }
     }
 }

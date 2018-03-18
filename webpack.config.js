@@ -98,6 +98,10 @@ module.exports = {
                 }
             },
             {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file?name=public/fonts/[name].[ext]'
+            },
+            {
                 test: /\.(svg)$/i,   //to support eg. background-image property 
                 loader:'file-loader',
                 options:{
