@@ -4,4 +4,57 @@ block head
     title Мои Работы
 
 block content
+    section.section.blog
+        .blog__triangles
+            svg.triangles__tr(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
+                polygon.triangles__left(points="0,0   0,86   500.8,86   500.8,75.5")
+                polygon.triangles__right(points="1000,0   1000,86   500,86   500,75.5")
+        .container.blog-container
+            .blog__titles
+                ul.titles__list
+                    li.titles__item.titles__item--active
+                        p Самое важное в SASS
+                    li.titles__item
+                        p Приёмы в вёрстке, без которых не обходится ни один сайт
+                    li.titles__item
+                        p Самый необходимый набор Gulp плагинов
+                    li.titles__item
+                        p Почему я выбрал Pug
+            .blog__content
+                ul.content__list
+                    li.content__item
+                        h2.content__title Самое важное в SASS
+                        .content__date 22 ноября 2016
+                        .content__text 
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste maxime recusandae suscipit rerum tempora provident perspiciatis. Voluptatem rerum sed, porro, adipisci perspiciatis facere unde molestias voluptatum aperiam tempore eligendi.In impedit quidem quisquam debitis omnis error eaque minima sequi quaerat accusamus assumenda perferendis provident dolorum recusandae eveniet mollitia, inventore nam, sit optio. Aut minima iusto facilis! Placeat, illo odio?Molestiae repellat sed at perferendis iure. Quidem recusandae eveniet excepturi, quibusdam nihil veniam tempora soluta corporis odio consequatur nobis reiciendis repellat perspiciatis quaerat aliquid aperiam quia beatae error dolor! Numquam!Id possimus inventore porro soluta tempora unde quos voluptate cupiditate. Neque, dolorum eaque assumenda sed mollitia corporis magni quam molestias expedita ab, necessitatibus sapiente tempora. Veniam sed dignissimos iure ad!Quae nulla consequatur sint et soluta quis fugiat, aut exercitationem deleniti, commodi numquam nobis inventore odit tempore odio impedit perferendis sequi incidunt. Magni laudantium omnis illo cum vero neque illum.
+                    li.content__item
+                        h2.content__title Приёмы в вёрстке, без которых не обходится ни один сайт
+                        .content__date 22 ноября 2016
+                        .content__text 
+                            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi facere repellat consectetur dolorum fuga aut, cupiditate suscipit, soluta odit nobis voluptates expedita quis vel optio eum nam doloremque rerum? Ducimus!Rerum distinctio praesentium quia provident laborum porro voluptatibus sapiente modi corporis nesciunt eaque, ratione sed id ex nisi, doloremque dolores est iure molestiae! Unde deleniti facere delectus necessitatibus molestias vero!Pariatur architecto voluptas adipisci tempora voluptatibus ut quas possimus, officiis commodi eligendi atque, autem libero cumque harum assumenda minima explicabo non odit dolor accusamus? Blanditiis corrupti laborum eius! Magni, aut.Est eveniet, non fugit atque, sint et exercitationem ex ut natus velit quis? Enim beatae quos tempora consectetur fugit quibusdam ducimus, tenetur qui eum recusandae, velit ut pariatur nesciunt quaerat.Assumenda, facilis architecto ratione commodi eius perferendis, excepturi, dignissimos eos a aliquid quisquam laboriosam similique? Quam illum sint dolores? Nulla id possimus tenetur quod, libero atque perferendis hic qui ab.
+    footer.footer
+        .container.footer-container
+            .footer__left
+                .left__links
+                    ul.left__links-list
+                        li.left__links__item
+                            a.left__link(href="") Мои работы
+                        li.left__links__item
+                            a.left__link(href="") Обо мне
+                        li.left__links__item
+                            a.left__link(href="") Блог
+                        li.left__links__item
+                            a.left__link(href="") Авторизация
+                .left__text Я веб-разработчик из Зеленограда, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+            .footer__right
+                .right__soc
+                    a.soc__link(href="http:/vk.com")
+                        img(src=require("./img/vk.png"), alt="vk.com")
+                    a.soc__link(href="http:/vk.com")
+                        img(src=require("./img/vk.png"), alt="vk.com")
+                    a.soc__link(href="http:/vk.com")
+                        img(src=require("./img/vk.png"), alt="vk.com")
+                .right__text © Давыдов Денис | создано с любовью в LoftSchool | 2018
+                    
+
     

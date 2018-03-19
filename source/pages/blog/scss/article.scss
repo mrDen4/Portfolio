@@ -1,0 +1,45 @@
+.blog {
+    position: relative;
+}
+
+.blog-container {
+    height: 90vh;
+    display: grid;
+    grid-template-areas: 
+        "list item";
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0 50px;
+}
+
+.blog__triangles {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    top: -140px;
+    margin: 0 auto;
+
+    .triangles__left {
+        fill: white;
+    }
+
+    .triangles__right {
+        fill: white;
+    }
+}
+
+.blog__titles {
+    grid-area: list;
+}
+
+.titles__item--active {
+    color: #00bfa5;
+    border-right: #00bfa5 2px solid;
+}
+
+.content__date {
+    color: #00bfa5;
+}
+
+.blog__content {
+    grid-area: item;
+}
