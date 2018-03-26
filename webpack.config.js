@@ -62,6 +62,28 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.svg$/,
+                use: [
+                  {
+                    loader: 'svg-sprite-loader',
+                    options: {
+                      extract: true,
+                      spriteFilename:  '../img/sprite.svg',
+                    }
+                  },
+                  {
+                    loader: 'svgo-loader',
+                    options: {
+                      plugins: [
+                        { removeNonInheritableGroupAttrs: true },
+                        { collapseGroups: true },
+                        { removeAttrs: { attrs: '(fill|stroke)' } }
+                      ],
+                    },
+                  },
+                ],
+              },
+            {
                 test: /\.pug$/,
                 loader: 'pug-loader',
                 options: {
@@ -96,39 +118,7 @@ module.exports = {
                 options: {
                     name: 'images/[name].[ext]'
                 }
-            },
-            {
-                test: /\.(eot|svg|ttf|woff|woff2)$/,
-                loader: 'file?name=public/fonts/[name].[ext]'
-            },
-            {
-                test: /\.(svg)$/i,   //to support eg. background-image property 
-                loader:'file-loader',
-                options:{
-                name:'[path][name].[ext]',
-                }
-              },
-              {
-              test: /\.(svg)$/i,   //sprite 
-              include: path.resolve(__dirname, 'source/svg/to_sprite'),
-              use: [
-                {
-                  loader: 'svg-sprite-loader',
-                  options: {
-                    extract: true,
-                    spriteFilename:  'svg/sprite.svg',
-                  }
-                },
-                   {
-                 loader: 'svgo-loader',
-                  options: {
-                  plugins: [
-                    { removeAttrs: { attrs: '(fill|stroke)' } },
-                    ],
-                  },
-                },
-               ],
-              }  
+            }
         ]
     }
 }
