@@ -1,7 +1,13 @@
 .talk {
     position: relative;
-    background: url("../img/works-bg.png") center center no-repeat;
     background-size: cover;
+}
+
+.talk__bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
 }
 
 .talk__content {

@@ -1,9 +1,29 @@
-extends ../base-header
-
 block head
     title Мои Работы
 
 block content
+    header.header
+        .container.header-container
+            .header__socials
+                a.socials__link(href="http:/vk.com")
+                    //- svg.socials__svg
+                    //-     use(xlink:href="../svg/_sprite.svg#vk")
+                a.socials__link(href="http:/vk.com")
+                    img(src=require("./img/github.png"), alt="vk.com")
+                a.socials__link(href="http:/vk.com")
+                    img(src=require("./img/in.png"), alt="vk.com")
+            .header__menu
+                button.header__menu-btn(type="button")
+    section.section.hero
+        .container.hero-container
+            .hero__parallax(data-parallax="scroll", data-image-src=require("./img/bg.png"))
+            .hero__back-text
+            .hero__ava
+                img.ava__avatar(src=require("./img/ava.png"), alt="avatar")
+                .ava__content
+                    h2.ava__name Денис Давыдов
+                    p.ava__text  Личный сайт веб разработчика
+            .hero__btn-next
     section.section.works
         .works__triangles
             svg.triangles__tr(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
@@ -24,6 +44,7 @@ block content
                 img.works__next-img(src=require("./img/slide-1.png"), alt="next-slide") 
     section.section.talk
         .container.talk-container
+            .talk__bg(data-parallax="scroll", data-image-src=require("./img/footer.png"))
             .talk__content
                 .content__title Что обо мне говорят
                 .content__comments

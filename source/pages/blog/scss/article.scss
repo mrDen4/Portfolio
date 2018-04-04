@@ -1,5 +1,6 @@
 .blog {
     position: relative;
+    background: #fff;
 }
 
 .blog-container {
@@ -15,7 +16,7 @@
     display: block;
     position: absolute;
     width: 100vw;
-    top: -140px;
+    top: -125px;
     margin: 0 auto;
 
     .triangles__left {
