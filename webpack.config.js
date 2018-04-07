@@ -57,7 +57,8 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
-        new UglifyJSPlugin()  
+        new UglifyJSPlugin(),
+        new SpriteLoaderPlugin()  
     ],
     module: {
         rules: [
