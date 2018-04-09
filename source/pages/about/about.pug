@@ -113,16 +113,20 @@ block content
             .map__contacts
                 .contacts__title Контакты
                 .contacts__description
-                    img.contacts__icon(src="", alt="")
+                    svg.contacts__link
+                        use(xlink:href="../svg/sprite.svg#skype")
                     p.contacts__text skype__kdn
                 .contacts__description
-                    img.contacts__icon(src="", alt="")
+                    svg.contacts__link
+                        use(xlink:href="../svg/sprite.svg#telegram_logo")
                     p.contacts__text den.saint.k@gmail.com
                 .contacts__description
-                    img.contacts__icon(src="", alt="")
+                    svg.contacts__link
+                        use(xlink:href="../svg/sprite.svg#phone")
                     p.contacts__text +7 926 123 12 12
                 .contacts__description
-                    img.contacts__icon(src="", alt="")
+                    svg.contacts__link
+                        use(xlink:href="../svg/sprite.svg#map_marker")
                     p.contacts__text г.Зеленоград, ул. Летчика Полагушина, д. 452
         footer.footer
             .container.footer-container
@@ -141,10 +145,13 @@ block content
                 .footer__right
                     .right__soc
                         a.soc__link(href="http:/vk.com")
-                            img(src=require("./img/vk.png"), alt="vk.com")
+                            svg.soc__svg
+                                use(xlink:href="../svg/sprite.svg#vk_round")
                         a.soc__link(href="http:/vk.com")
-                            img(src=require("./img/vk.png"), alt="vk.com")
+                            svg.soc__svg
+                                use(xlink:href="../svg/sprite.svg#github_round")
                         a.soc__link(href="http:/vk.com")
-                            img(src=require("./img/vk.png"), alt="vk.com")
+                            svg.soc__svg
+                                use(xlink:href="../svg/sprite.svg#in_round")
                     .right__text © Давыдов Денис | создано с любовью в LoftSchool | 2018
             

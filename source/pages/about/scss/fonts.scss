@@ -15,9 +15,17 @@
 }
 
 @font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.generated.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.generated.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Bernier';
-    src: url('../fonts/Roboto-Light.generated.woff2') format('woff2'),
-        url('../fonts/Roboto-Light.generated.woff') format('woff');
+    src: url('../fonts/BERNIERRegular-Regular.generated.woff2') format('woff2'),
+        url('../fonts/BERNIERRegular-Regular.generated.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
