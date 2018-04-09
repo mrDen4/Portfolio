@@ -39,11 +39,14 @@ block content
                 p.welcome__text Личный сайт веб разработчика
             .welcome__socials
                 a.socials__link(href="vk.com")
-                    .socials__icon.socials__icon--vk
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#vk")
                 a.socials__link(href="vk.com")
-                    .socials__icon.socials__icon--git
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#github")
                 a.socials__link(href="vk.com")
-                    .socials__icon.socials__icon--in
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#in")
             div(class="welcome__btns")
                 button.welcome__btn(type="button") Мои работы
                 button.welcome__btn(type="button") Обо мне

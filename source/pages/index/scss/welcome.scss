@@ -48,20 +48,14 @@
     }
 }
 
-.socials__icon {
+.socials__svg {
     width: 30px;
     height: 20px;
+    fill: white;
+    opacity: .5;
 
-    &--vk {
-        background: url("../img/vk.png") center center no-repeat;
-    }
-
-    &--git {
-        background: url("../img/github.png") center center no-repeat;
-    }
-
-    &--in {
-        background: url("../img/in-hover.png") center center no-repeat;
+    &:hover {
+        opacity: 1;
     }
 }
 
