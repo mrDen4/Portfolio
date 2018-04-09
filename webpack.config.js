@@ -69,7 +69,7 @@ module.exports = {
                     loader: 'svg-sprite-loader',
                     options: {
                       extract: true,
-                      spriteFilename:  '../assets/svg/sprite.svg',
+                      spriteFilename:  'svg/sprite.svg',
                     }
                   },
                   {
@@ -119,6 +119,25 @@ module.exports = {
                 options: {
                     name: 'images/[name].[ext]'
                 }
+            },
+            {
+                test: /^(?!.*\.generated\.ttf$).*\.ttf$/,
+                use: ExtractTextPlugin.extract({
+                  publicPath: '../',
+                  use: ['css-loader', 'fontface-loader']
+                })
+            },
+            {
+                test: /\.generated.(ttf|eot|woff|woff2)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      outputPath: 'fonts/',
+                      name: '[name].[ext]'
+                    }
+                  }
+                ]
             }
         ]
     }

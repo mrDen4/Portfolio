@@ -9,13 +9,17 @@ block content
             .header__socials
                 a.socials__link(href="http:/vk.com")
                     svg.socials__svg
-                        use(xlink:href="../../assets/svg/sprite.svg#vk")
-                a.socials__link(href="http:/vk.com")
-                    img(src=require("./img/github.png"), alt="vk.com")
-                a.socials__link(href="http:/vk.com")
-                    img(src=require("./img/in.png"), alt="vk.com")
+                        use(xlink:href="../svg/sprite.svg#vk")
+                a.socials__link(href="http:/fb.com")
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#github")
+                a.socials__link(href="http:/in.com")
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#in")
             .header__menu
                 button.header__menu-btn(type="button")
+                    svg.header__menu-svg
+                        use(xlink:href="../svg/sprite.svg#hamburger")
     section.section.hero
         .container.hero-container
             .hero__parallax(data-parallax="scroll", data-image-src=require("./img/bg.png"))
