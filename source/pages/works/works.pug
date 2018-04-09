@@ -6,14 +6,18 @@ block content
         .container.header-container
             .header__socials
                 a.socials__link(href="http:/vk.com")
-                    //- svg.socials__svg
-                    //-     use(xlink:href="../svg/_sprite.svg#vk")
-                a.socials__link(href="http:/vk.com")
-                    img(src=require("./img/github.png"), alt="vk.com")
-                a.socials__link(href="http:/vk.com")
-                    img(src=require("./img/in.png"), alt="vk.com")
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#vk")
+                a.socials__link(href="http:/fb.com")
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#github")
+                a.socials__link(href="http:/in.com")
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#in")
             .header__menu
                 button.header__menu-btn(type="button")
+                    svg.header__menu-svg
+                        use(xlink:href="../svg/sprite.svg#hamburger")
     section.section.hero
         .container.hero-container
             .hero__parallax(data-parallax="scroll", data-image-src=require("./img/bg.png"))
@@ -89,11 +93,13 @@ block content
                     .footer__right
                         .right__soc
                             a.soc__link(href="http:/vk.com")
-                                img(src=require("./img/vk.png"), alt="vk.com")
+                                svg.soc__svg
+                                    use(xlink:href="../svg/sprite.svg#vk_round")
                             a.soc__link(href="http:/vk.com")
-                                img(src=require("./img/vk.png"), alt="vk.com")
+                                svg.soc__svg
+                                    use(xlink:href="../svg/sprite.svg#github_round")
                             a.soc__link(href="http:/vk.com")
-                                img(src=require("./img/vk.png"), alt="vk.com")
+                                svg.soc__svg
+                                    use(xlink:href="../svg/sprite.svg#in_round")
                         .right__text © Давыдов Денис | создано с любовью в LoftSchool | 2018
-
     

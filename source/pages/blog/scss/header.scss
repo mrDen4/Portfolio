@@ -2,20 +2,42 @@
     position: absolute;
     width: 100%;
     top: 0;
+    z-index: 10;
+}
+
+.socials__link {
+    text-decoration: none;
+    cursor: pointer;
+    fill: white;
 }
 
 .socials__svg {
     width: 30px;
     height: 20px;
-    fill: red;
+    opacity: .5;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .header__menu-btn {
     width: 40px;
     height: 35px;
-    background: url('../img/hamburger.png') center center no-repeat;
     border: none;
     cursor: pointer;
+    background: none;
+}
+
+.header__menu-svg {
+    fill: white;
+    width: 30px;
+    height: 20px;
+    opacity: .5;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .socials__link {

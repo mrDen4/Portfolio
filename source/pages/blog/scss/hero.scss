@@ -26,9 +26,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: 10;
 
     .ava__name {
-        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-family: 'Roboto-Medium', Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-style: normal;
     }

@@ -3,17 +3,21 @@ block head
 
 block content
     header.header
-            .container.header-container
-                .header__socials
-                    a.socials__link(href="http:/vk.com")
-                        //- svg.socials__svg
-                        //-     use(xlink:href="../svg/_sprite.svg#vk")
-                    a.socials__link(href="http:/vk.com")
-                        img(src=require("./img/github.png"), alt="vk.com")
-                    a.socials__link(href="http:/vk.com")
-                        img(src=require("./img/in.png"), alt="vk.com")
-                .header__menu
-                    button.header__menu-btn(type="button")
+        .container.header-container
+            .header__socials
+                a.socials__link(href="http:/vk.com")
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#vk")
+                a.socials__link(href="http:/fb.com")
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#github")
+                a.socials__link(href="http:/in.com")
+                    svg.socials__svg
+                        use(xlink:href="../svg/sprite.svg#in")
+            .header__menu
+                button.header__menu-btn(type="button")
+                    svg.header__menu-svg
+                        use(xlink:href="../svg/sprite.svg#hamburger")
     section.section.hero
         .container.hero-container
             .hero__parallax(data-parallax="scroll", data-image-src=require("./img/bg.png"))
@@ -53,28 +57,31 @@ block content
                         .content__text 
                             p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi facere repellat consectetur dolorum fuga aut, cupiditate suscipit, soluta odit nobis voluptates expedita quis vel optio eum nam doloremque rerum? Ducimus!Rerum distinctio praesentium quia provident laborum porro voluptatibus sapiente modi corporis nesciunt eaque, ratione sed id ex nisi, doloremque dolores est iure molestiae! Unde deleniti facere delectus necessitatibus molestias vero!Pariatur architecto voluptas adipisci tempora voluptatibus ut quas possimus, officiis commodi eligendi atque, autem libero cumque harum assumenda minima explicabo non odit dolor accusamus? Blanditiis corrupti laborum eius! Magni, aut.Est eveniet, non fugit atque, sint et exercitationem ex ut natus velit quis? Enim beatae quos tempora consectetur fugit quibusdam ducimus, tenetur qui eum recusandae, velit ut pariatur nesciunt quaerat.Assumenda, facilis architecto ratione commodi eius perferendis, excepturi, dignissimos eos a aliquid quisquam laboriosam similique? Quam illum sint dolores? Nulla id possimus tenetur quod, libero atque perferendis hic qui ab.
     footer.footer
-        .container.footer-container
-            .footer__left
-                .left__links
-                    ul.left__links-list
-                        li.left__links__item
-                            a.left__link(href="") Мои работы
-                        li.left__links__item
-                            a.left__link(href="") Обо мне
-                        li.left__links__item
-                            a.left__link(href="") Блог
-                        li.left__links__item
-                            a.left__link(href="") Авторизация
-                .left__text Я веб-разработчик из Зеленограда, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
-            .footer__right
-                .right__soc
-                    a.soc__link(href="http:/vk.com")
-                        img(src=require("./img/vk.png"), alt="vk.com")
-                    a.soc__link(href="http:/vk.com")
-                        img(src=require("./img/vk.png"), alt="vk.com")
-                    a.soc__link(href="http:/vk.com")
-                        img(src=require("./img/vk.png"), alt="vk.com")
-                .right__text © Давыдов Денис | создано с любовью в LoftSchool | 2018
+                .container.footer-container
+                    .footer__left
+                        .left__links
+                            ul.left__links-list
+                                li.left__links__item
+                                    a.left__link(href="") Мои работы
+                                li.left__links__item
+                                    a.left__link(href="") Обо мне
+                                li.left__links__item
+                                    a.left__link(href="") Блог
+                                li.left__links__item
+                                    a.left__link(href="") Авторизация
+                        .left__text Я веб-разработчик из Зеленограда, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+                    .footer__right
+                        .right__soc
+                            a.soc__link(href="http:/vk.com")
+                                svg.soc__svg
+                                    use(xlink:href="../svg/sprite.svg#vk_round")
+                            a.soc__link(href="http:/vk.com")
+                                svg.soc__svg
+                                    use(xlink:href="../svg/sprite.svg#github_round")
+                            a.soc__link(href="http:/vk.com")
+                                svg.soc__svg
+                                    use(xlink:href="../svg/sprite.svg#in_round")
+                        .right__text © Давыдов Денис | создано с любовью в LoftSchool | 2018
                     
 
     

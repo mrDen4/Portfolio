@@ -3,9 +3,10 @@
     bottom: 0;
     min-height: 150px;
     width: 100vw;
-    background: #373e42;
-    opacity: .85;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
+    display: flex;
+    flex-direction: row;
 
     .footer__left {
         width: 50%;
@@ -33,6 +34,35 @@
         .left__link {
             color: white;
             text-decoration: none;
+            font-family: 'Roboto-Medium', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+    }
+}
+
+.right__soc {
+    margin-bottom: 20px;
+}
+
+.left__text, .right__text {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    opacity: .5;
+}
+
+.soc__link {
+    text-decoration: none;
+
+    .soc__svg {
+        width: 36px;
+        height: 36px;
+        opacity: .3;
+        fill: white;
+
+        &:hover {
+            opacity: 1;
         }
     }
 }
