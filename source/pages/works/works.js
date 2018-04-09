@@ -1,6 +1,8 @@
 import 'normalize.css';
 import './scss/works.scss';
 import './parallax.js';
+import './img/bg.png';
+import './img/footer.png';
 import '../../assets/svg/to_sprite/vk.svg';
 import '../../assets/svg/to_sprite/github.svg';
 import '../../assets/svg/to_sprite/in.svg';
